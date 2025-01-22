@@ -1,0 +1,87 @@
+[
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868701a" }, 
+        "identification" : "5678901248", 
+        "first_name" : "John", 
+        "middle_name" : "", 
+        "last_name" : "Connor",     
+        "address" : {
+            "address" : "34 Maple St",
+            "city" : "Kitchener", 
+            "province" : "Ontario", 
+            "country" : "Canada",
+            "zip_code" : "V6G 2J2"
+        }, 
+        "dob" : "1990-04-08", 
+        "email" : "jconnor@gmail.com", 
+        "phone" : 224776487
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868701b" }, 
+        "identification" : "3568710924", 
+        "first_name" : "Emily", 
+        "middle_name" : "", 
+        "last_name" : "Jones",     
+        "address" : {
+            "address" : "55 Main St",
+            "city" : "Kitchener", 
+            "province" : "Ontario", 
+            "country" : "Canada",
+            "zip_code" : "H3B 1A1"
+        }, 
+        "dob" : "1995-03-15", 
+        "email" : "ejones@gmail.com", 
+        "phone" : 647983167
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868701c" }, 
+        "identification" : "6890431276", 
+        "first_name" : "Samantha", 
+        "middle_name" : "Madison", 
+        "last_name" : "Lee",     
+        "address" : {
+            "address" : "789 Pine Ave",
+            "city" : "Kitchener", 
+            "province" : "Ontario", 
+            "country" : "Canada",
+            "zip_code" : "T2E 1X4"
+        }, 
+        "dob" : "1987-09-22", 
+        "email" : "smlee@gmail.com", 
+        "phone" : 905427709
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868701d" }, 
+        "identification" : "2093645781", 
+        "first_name" : "Ethan", 
+        "middle_name" : "Alexander", 
+        "last_name" : "Connor",     
+        "address" : {
+            "address" : "22 Ocean Dr",
+            "city" : "Kitchener", 
+            "province" : "Ontario", 
+            "country" : "Canada",
+            "zip_code" : "B3H 4P7"
+        }, 
+        "dob" : "2001-11-07", 
+        "email" : "eaconnor@gmail.com", 
+        "phone" : 613842206
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868701e" }, 
+        "identification" : "8451203769", 
+        "first_name" : "Harry", 
+        "middle_name" : "", 
+        "last_name" : "Potter",     
+        "address" : {
+            "address" : "456 Elm St",
+            "city" : "Kitchener", 
+            "province" : "Ontario", 
+            "country" : "Canada",
+            "zip_code" : "R3B 0R6"
+        }, 
+        "dob" : "1978-06-11", 
+        "email" : "hpotter@gmail.com", 
+        "phone" : 519491741
+    }
+]

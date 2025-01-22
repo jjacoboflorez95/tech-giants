@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <div class="wrapper">
+      <main>
+        <h1>List of Orders for One Customer</h1>
+        <form action="/get_customer_orders" method="post">
+          <div class="row">
+            <div class="col">
+              <div class="input-group mb-3">
+                <select class="form-select" name="customer_id" >
+                  <option selected>Select Customer</option>
+                  <% for(let i=0; i<all_customers.length; i++){ %>
+                  <option value="<%= all_customers[i]._id %>"><%= all_customers[i].first_name + ' ' + all_customers[i].middle_name + ' ' + all_customers[i].last_name %></option>
+                    <% } %>
+                  
+                </select>
+                <button class="btn btn-outline-primary" type="submit">
+                  Fetch Orders
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        
+        <div class="report-container">
+          <% if(customer){ %>
+            <div class="customer-details">
+              <ul class="list-group">
+                <li class="list-group-item"><%= customer.first_name + ' ' + customer.middle_name
+                  + ' ' + customer.last_name %></li>
+                <li class="list-group-item"><%= customer.address.address %></li>
+                <li class="list-group-item"><%= customer.address.city + ', ' + customer.address.province %></li>
+                <li class="list-group-item"><%= customer.address.country %></li>
+                <li class="list-group-item"><%= customer.address.zip_code %></li>
+              </ul>
+            </div>
+            <% } %>
+          <% if(error){ %>
+            <div class="alert alert-danger" role="alert">
+              <%= error %>
+            </div>
+            <% } else if(orders){ %>
+              <form action="/print_orders_report" method="post">
+                <input type="text" value="<%= customer._id %>" name="customer_id" hidden />
+                <button class="btn btn-outline-success" type="submit">GENERATE REPORT</button>
+              </form>
+                <table class="table table-bordered">
+                  <tr>
+                      <th>#</th>
+                      <th>Date</th>
+                      <th>Product Name</th>
+                      <th>Quantity</th>
+                      <th>Unit Price</th>
+                      <th>Total Price</th>
+                  </tr>
+                  <% for(let i=0; i<orders.length; i++){ %>
+                      <tr>
+                          <td><%= i+1  %></td>
+                          <td><%= orders[i].date  %></td>
+                          <td><%= orders[i].product_id.name  %></td>
+                          <td><%= orders[i].quantity  %></td>
+                          <td><%= orders[i].product_id.price  %></td>
+                          <td><%= orders[i].total_price  %></td>
+                      </tr>
+                      <% } %>
+                          </table>
+              
+              <% } %>
+        </div>
+      </main>
+      <%- include('./partials/footer.ejs') %>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/changeFontFamilyWebsite.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+form {
+	margin-top: 90px;
+	display: initial;
+}
+.form_inputs input[type="submit"] {
+	width: 25%;
+}
+
+.form_inputs_search {
+	flex-direction: row;
+	gap: 50px;
+	justify-content: center;
+}
+.form_inputs_search input {
+	width: 25%;
+}
+.form_inputs_search input[type="submit"] {
+	margin: 0;
+	width: 18%;
+}
+
+@media (max-width: 900px) {
+	.form_inputs input[type="submit"] {
+		width: 25%;
+	}
+}
+
+@media (max-width: 900px) {
+	.form_inputs input[type="submit"] {
+		width: 25%;
+	}
+}

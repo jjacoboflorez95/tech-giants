@@ -1,0 +1,62 @@
+[
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868704a" }, 
+        "date" : "2023-07-25", 
+        "quantity" : 1,
+        "status" : 1, 
+        "total_price" : 20, 
+        "customer_id" : { "$oid": "57d28452ed5d4d54e868701a" },
+        "employee_id" : { "$oid": "57d28452ed5d4d54e868706a" },
+        "product_id" : { "$oid": "57d28452ed5d4d54e868703b" }
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868704b" }, 
+        "date" : "2023-07-25", 
+        "quantity" : 1,
+        "status" : 1, 
+        "total_price" : 159, 
+        "customer_id" : { "$oid": "57d28452ed5d4d54e868701a" },
+        "employee_id" : { "$oid": "57d28452ed5d4d54e868706a" },
+        "product_id" : { "$oid": "57d28452ed5d4d54e868703a" }
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868704c" }, 
+        "date" : "2023-07-25", 
+        "quantity" : 3,
+        "status" : 1, 
+        "total_price" : 150, 
+        "customer_id" : { "$oid": "57d28452ed5d4d54e868701a" },
+        "employee_id" : { "$oid": "57d28452ed5d4d54e868706a" },
+        "product_id" : { "$oid": "57d28452ed5d4d54e868703c" }
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868704d" }, 
+        "date" : "2023-06-23", 
+        "quantity" : 2,
+        "status" : 1, 
+        "total_price" : 318, 
+        "customer_id" : { "$oid": "57d28452ed5d4d54e868701a" },
+        "employee_id" : { "$oid": "57d28452ed5d4d54e868706b" },
+        "product_id" : { "$oid": "57d28452ed5d4d54e868703a" }
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868704e" }, 
+        "date" : "2023-06-23", 
+        "quantity" : 1,
+        "status" : 1, 
+        "total_price" : 20, 
+        "customer_id" : { "$oid": "57d28452ed5d4d54e868701a" },
+        "employee_id" : { "$oid": "57d28452ed5d4d54e868706b" },
+        "product_id" : { "$oid": "57d28452ed5d4d54e868703b" }
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868704f" }, 
+        "date" : "2023-07-27", 
+        "quantity" : 2,
+        "status" : 1, 
+        "total_price" : 40, 
+        "customer_id" : { "$oid": "57d28452ed5d4d54e868701b" },
+        "employee_id" : { "$oid": "57d28452ed5d4d54e868706a" },
+        "product_id" : { "$oid": "57d28452ed5d4d54e868703b" }
+    }
+]

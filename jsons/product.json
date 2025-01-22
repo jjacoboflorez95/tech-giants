@@ -1,0 +1,32 @@
+[
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868703a" }, 
+        "name" : "Baby Yoda", 
+        "category" : "Kids", 
+        "price" : 159
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868703b" }, 
+        "name" : "Monopoly", 
+        "category" : "Board games", 
+        "price" : 20
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868703c" }, 
+        "name" : "Nerf Machinge Gun", 
+        "category" : "Kids", 
+        "price" : 50
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868703d" }, 
+        "name" : "Lego Star Wars", 
+        "category" : "Kids", 
+        "price" : 155
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868703e" }, 
+        "name" : "Stuffed toy dog", 
+        "category" : "Kids", 
+        "price" : 20
+    }
+]
