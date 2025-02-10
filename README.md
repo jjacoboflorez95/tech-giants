@@ -125,8 +125,8 @@ This project includes a `jsons` folder with pre-defined JSON files to populate t
 ## 🖼️ Screenshots
 
 | Home |
-|-----------|-----------|
-| ![Home](https://private-user-images.githubusercontent.com/78884528/411566177-ed0f5010-83c7-4841-a30b-5706c72edb7a.png) |
+|-----------|
+| ![Home](https://user-images.githubusercontent.com/78884528/411566177-ed0f5010-83c7-4841-a3b0-5706c72edb7a.png) |
 
 ---
 
