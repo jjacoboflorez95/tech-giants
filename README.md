@@ -122,6 +122,12 @@ This project includes a `jsons` folder with pre-defined JSON files to populate t
 - **📊 PDF Reports:** Export key data for external analysis.
 - **⚡ Optimization:** Optimized routes and queries for efficient performance.
 
+## 🖼️ Screenshots
+
+| Home |
+|-----------|-----------|
+| ![Home](https://github.com/jjacoboflorez95/tech-giants/issues/1#issuecomment-2647935985) |
+
 ---
 
 💼 Author: Juan Jacobo Florez Monroy | 🚀 Portfolio: [Portfolio Website or GitHub]
