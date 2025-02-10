@@ -126,7 +126,7 @@ This project includes a `jsons` folder with pre-defined JSON files to populate t
 
 | Home |
 |-----------|-----------|
-| ![Home](https://github.com/jjacoboflorez95/tech-giants/issues/1#issuecomment-2647935985) |
+| ![Home](https://private-user-images.githubusercontent.com/78884528/411566177-ed0f5010-83c7-4841-a30b-5706c72edb7a.png) |
 
 ---
 
