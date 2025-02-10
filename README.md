@@ -124,9 +124,17 @@ This project includes a `jsons` folder with pre-defined JSON files to populate t
 
 ## 🖼️ Screenshots
 
-| Home |
-|-----------|
-| ![Home](https://user-images.githubusercontent.com/78884528/411566177-ed0f5010-83c7-4841-a3b0-5706c72edb7a.png) |
+| Home | Insert | Update |
+|-----------|-----------|-----------|
+| ![Home](assets/images/github/home.png) | ![Insert](assets/images/github/insert.png) | ![Update](assets/images/github/update.png) |
+
+| Customer Invoice Report | PDF |
+|-----------|-----------|
+| ![Customer Invoice Report](assets/images/github/customer_invoice_report.png) | ![PDF](assets/images/github/customer_invoice_report_pdf.png) |
+
+| Monthly Orders Report | PDF |
+|-----------|-----------|
+| ![Monthly Orders Report](assets/images/github/monthly_orders_report.png) | ![PDF](assets/images/github/monthly_orders_report_pdf.png) |
 
 ---
 
