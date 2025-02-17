@@ -151,5 +151,8 @@ This project includes a `jsons` folder with pre-defined JSON files to populate t
 
 ---
 
-💼 Author: Juan Jacobo Florez Monroy | 🚀 Portfolio: [Portfolio Website or GitHub]
+## 💼 Author
 
+👤 **Juan Jacobo Florez Monroy**  
+🌐 **Portfolio**: [jjacobo95.com](https://jjacobo95.com)  
+🐙 **GitHub**: [github.com/jjacoboflorez95](https://github.com/jjacoboflorez95)
