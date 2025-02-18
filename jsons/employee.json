@@ -1,0 +1,47 @@
+[
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868706a" }, 
+        "identification" : "5678901241", 
+        "first_name" : "Camilo", 
+        "middle_name" : "", 
+        "last_name" : "Rodriguez",
+        "salary" : 25800, 
+        "type" : "Cashier"
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868706b" }, 
+        "identification" : "5678901242", 
+        "first_name" : "Laura", 
+        "middle_name" : "", 
+        "last_name" : "Montes",
+        "salary" : 25800, 
+        "type" : "Cashier"
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868706c" }, 
+        "identification" : "5678901243", 
+        "first_name" : "Juan", 
+        "middle_name" : "Carlos", 
+        "last_name" : "Burgos",
+        "salary" : 25800, 
+        "type" : "Cashier"
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868706d" }, 
+        "identification" : "5678901244", 
+        "first_name" : "Natalia", 
+        "middle_name" : "", 
+        "last_name" : "Valor",
+        "salary" : 25800, 
+        "type" : "Cashier"
+    },
+    { 
+        "_id" : { "$oid": "57d28452ed5d4d54e868706e" }, 
+        "identification" : "5678901245", 
+        "first_name" : "Juan", 
+        "middle_name" : "Pablo", 
+        "last_name" : "Dussan",
+        "salary" : 25800, 
+        "type" : "Cashier"
+    }
+]

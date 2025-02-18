@@ -1,0 +1,185 @@
+body {
+	margin: 0;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	background-color: #fcfdf3a0;
+}
+
+/*Code that allow us to set the footer at the bottom of the page*/
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+header,
+main {
+	flex: 1;
+}
+footer {
+	margin-top: auto;
+}
+
+/*Header*/
+header {
+	display: flex;
+	align-items: center;
+	background-color: #0d4b15cd;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 1%;
+	/*Fixed the header*/
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+#logoheader {
+	flex-grow: 1;
+}
+
+#logoheader h1 {
+	font-size: 2.1em;
+	margin: 0px;
+	margin-left: 30px;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+header a {
+	color: white;
+	text-decoration: none;
+}
+header a:hover,
+#logoheader h1:hover {
+	color: rgb(230, 230, 230);
+}
+nav ul {
+	list-style-type: none;
+	display: flex;
+	gap: 50px;
+	margin-right: 45px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 116%;
+	letter-spacing: 1px;
+}
+
+/*Main*/
+main {
+	margin-top: 120px;
+	display: flex;
+	/* gap: 35px; */
+	flex-direction: column;
+	align-items: center;
+}
+/*Main - h1*/
+main h1 {
+	font-size: 3em;
+	margin-bottom: 25px;
+}
+/*Main - Table*/
+table {
+	border-top: 1px solid rgba(165, 253, 162, 0.452);
+	border-bottom: 1px solid rgba(165, 253, 162, 0.452);
+}
+table {
+	/* width: 50%; */
+	border-collapse: collapse;
+	text-align: center;
+}
+th,
+td {
+	padding: 25px;
+}
+th {
+	font-size: 145%;
+	letter-spacing: 1.5px;
+}
+td {
+	font-size: 120%;
+	letter-spacing: 1px;
+}
+tr:nth-of-type(even) {
+	background-color: rgb(216, 253, 215);
+}
+tr:nth-of-type(odd) {
+	background-color: white;
+}
+
+header button {
+	padding: 10px;
+	margin-right: 25px;
+	background-color: #166e22cd;
+	border: 1px solid #105319cd;
+	color: white;
+	border-radius: 7px;
+	letter-spacing: 1px;
+}
+
+header button:hover {
+	cursor: pointer;
+	background-color: #0d4b15cd;
+	border: 1px solid rgb(15, 58, 15);
+	transition: 0.3s;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #0d4b15cd;
+	background-color: #dbdbdbcd;
+	margin-top: 150px;
+	height: 130px;
+	text-align: center;
+}
+footer h4 {
+	font-size: 1.4em;
+	font-style: italic;
+	margin: 0px;
+	margin-bottom: 10px;
+	color: rgb(90, 90, 90);
+}
+footer p {
+	margin: 0px;
+	margin-bottom: 5px;
+	font-size: 90%;
+	color: rgb(109, 109, 109);
+}
+
+/* ------------reports */
+.report-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+@media (max-width: 1210px) {
+	main h1 {
+		font-size: 2.6em;
+	}
+	header {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#logoheader {
+		width: 100%;
+		margin: 0px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	nav ul {
+		gap: 35px;
+		margin-right: 35px;
+		font-size: 115%;
+	}
+	main {
+		margin-top: 150px;
+	}
+}
+
+@media (max-width: 900px) {
+	nav ul {
+		gap: 15px;
+		margin-right: 10px;
+		font-size: 115%;
+	}
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/insert_update.css" />
+    <link rel="stylesheet" href="../css/update.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <%- include('./partials/header.ejs') %>
+      <main>
+        <form action="update" method="post">
+          <% if(customerUpdated) { %>
+          <div class="div_span">
+            <span class="succesfull_span">Customer updated successfully</span>
+          </div>
+          <% } %> <% if(emptySearch) { %>
+          <div class="div_span">
+            <span class="error_span">Customer not found</span>
+          </div>
+          <% } %> <% if(!customerFound) { %>
+          <div id="div_search" class="form_inputs form_inputs_search">
+            <input
+              type="text"
+              name="identification"
+              id="identification"
+              placeholder="Identification..."
+            />
+            <input
+              type="submit"
+              name="search"
+              value="Search"
+              formaction="<%= formAction %>"
+              class="form_submit"
+            />
+          </div>
+          <% } else { %>
+          <div id="div_client_information" class="form_inputs">
+            <input
+              type="text"
+              name="id_customer"
+              id="id_customer"
+              style="display: none"
+              <% if(data){ %>
+              value="<%= data._id %>"/>
+              <% } %>
+            <input
+              type="text"
+              name="identification"
+              id="identification"
+              placeholder="Identification..."
+              <% if(data) { %>
+                value="<%= data.identification %>"
+            />
+            <% } %>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="First name..."
+              <% if(data){ %>
+                value="<%= data.first_name %>"
+            />
+            <% } %>
+            <input
+              type="text"
+              name="middle_name"
+              id="middle_name"
+              placeholder="Middle name..."
+              <% if(data){ %>
+              value="<%= data.middle_name %>"
+            /><% } %>
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Last name..."
+              <%if(data){ %>
+                value="<%= data.last_name %>"
+              
+            /><% } %>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Address..."
+              <% if(data){ %>
+                value="<%= data.address.address %>"
+            /><% } %>
+            <div id="div_address_info">
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="City..."
+                <% if(data){  %>
+                value="<%= data.address.city %>"
+              /><% } %>
+              <input
+                type="text"
+                name="province"
+                id="province"
+                placeholder="Province..."
+                <% if(data) { %>
+                    value="<%= data.address.province %>"
+              /><% } %>
+              <input
+                type="text"
+                name="country"
+                id="country"
+                placeholder="Country..."
+                <% if(data) { %>
+                    value="<%= data.address.country %>"
+              /><% } %>
+              <input
+                type="text"
+                name="zip_code"
+                id="zip_code"
+                placeholder="ZIP Code..."
+                <% if(data) { %>
+                    value="<%= data.address.zip_code %>"
+              /><% } %> 
+            </div>
+            <input
+              type="text"
+              name="dob"
+              id="dob"
+              placeholder="Birthdate..."
+              onfocus="(this.type='date')"
+              <% if(data) { %>
+                value="<%= data.dob %>"
+            /><% } %>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email..."
+              <% if(data) { %>
+                value="<%= data.email %>"
+            /><% } %>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Phone..."
+              <% if(data) { %>
+                value="<%= data.phone %>"
+            /><% } %>
+            <input
+              type="submit"
+              name="update_information"
+              value="Update information"
+              formaction="<%= formAction %>"
+              class="form_submit"
+            />
+          </div>
+          <% } %>
+        </form>
+      </main>
+      <%- include('./partials/footer.ejs') %>
+    </div>
+    <script src="../js/changeFontFamilyWebsite.js"></script>
+  </body>
+</html>
